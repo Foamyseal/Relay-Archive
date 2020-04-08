@@ -1,17 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.scss';
+import { BrowserRouter as Router, Route } from 'react-router-dom'; 
 
 import socketIOClient from 'socket.io-client';
+import Join from './components/Join/Join';
+import Chat from './components/Chat/Chat';
 
-function App() {
-    const endpoint = 'http://localhost:3001';
-
-    const socket = socketIOClient(endpoint);
+const App = () => {
     return (
-        <h1></h1>
-    );
-}
+        <Router>
+            <Route path="/" exact component={Join}/>
+            <Route path="/chat" component={Chat} />
+        </Router>
+    )
+};
 
 export default App;
