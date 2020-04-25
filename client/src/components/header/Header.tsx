@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Menu, Row, Col, Input } from 'antd';
+import { Layout, Menu, Row, Col, Input, Button } from 'antd';
 import SearchBar from './SearchBar';
 import Profile from './Profile';
 
@@ -12,7 +12,10 @@ const HeaderBar = () => {
     return (
         <Header id="header" style={{ zIndex: 1, width: '100%' }}>
             <Row>
-                <Col span={3}> Relay </Col>
+                <Col span={3}> 
+                <Button type="link" ghost>
+                            <Link to="/"> RELAY</Link>
+                        </Button> </Col>
                 <Col span={20}>
                     {' '}
                     <SearchBar />{' '}

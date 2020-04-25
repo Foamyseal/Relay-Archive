@@ -1,18 +1,15 @@
 import React from 'react';
 import { Layout, Avatar, Menu, Breadcrumb, Row, Col, Input } from 'antd';
-import Title from 'antd/lib/typography/Title';
-import CardCategory from './Card/CardCategory';
-import MessageCard from './Card/MessageCard';
-import SearchBar from './Header/SearchBar';
-import Profile from './Header/Profile';
+import MessageCard from './card/MessageCard';
+
 
 import Chat from './Chat/Chat';
 import { Link } from 'react-router-dom';
-import HeaderBar from './Header/Header';
-import FooterBar from './Footer/FootBar';
+import Header from './header/Header';
+import FootBar from './footer/FootBar';
 import SideNav from './SideNav/SideNav';
 
-const { Header, Footer, Sider, Content } = Layout;
+const {  Footer, Sider, Content } = Layout;
 const { SubMenu } = Menu;
 const { Search } = Input;
 
@@ -25,7 +22,7 @@ const MainBody = () => {
 
     return (
         <Layout style={{ minHeight: '100vh' }}>
-            <HeaderBar />
+            <Header />
             <Layout>
                 <SideNav />
                 <Content
@@ -52,7 +49,7 @@ const MainBody = () => {
                 </Content>
                 
             </Layout>
-            <FooterBar />
+            <FootBar />
         </Layout>
     );
 };

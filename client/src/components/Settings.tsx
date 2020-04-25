@@ -12,12 +12,8 @@ import {
     Input,
     Button,
 } from 'antd';
-import Title from 'antd/lib/typography/Title';
-import CardCategory from './card/CardCategory';
-import MessageCard from './card/MessageCard';
-import SearchBar from './header/SearchBar';
-import Profile from './header/Profile';
-import HeadBar from './header/HeadBar';
+
+import HeadBar from './header/Header';
 
 const { Header, Footer, Sider, Content } = Layout;
 const layout = {
@@ -48,7 +44,7 @@ const Settings = () => {
                 >
                     <Breadcrumb style={{ margin: '16px 0' }}>
                         <Breadcrumb.Item>
-                            <Link to="/"> Home</Link>
+                            <Link to="/chat"> Home</Link>
                         </Breadcrumb.Item>
                         <Breadcrumb.Item>Settings</Breadcrumb.Item>
                     </Breadcrumb>
