@@ -6,7 +6,7 @@ import MessageCard from './card/MessageCard';
 import Chat from './Chat/Chat';
 import { Link } from 'react-router-dom';
 import Header from './header/Header';
-import FootBar from './footer/FootBar';
+import FootBar from './Footer/FootBar';
 import SideNav from './SideNav/SideNav';
 
 const {  Footer, Sider, Content } = Layout;
